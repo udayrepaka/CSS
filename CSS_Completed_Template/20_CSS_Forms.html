@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS forms</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome.min.css">
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-image: url("img/gallery1.jpeg");
+            background-size: cover;
+        }
+        .form-div{
+            border: 2px solid blue;
+            width: 250px;
+            text-align: center;
+            border-radius: 50px;
+            background-image: url("https://thumbs.gfycat.com/DecimalBlandArabianwildcat-size_restricted.gif");
+        }
+        .form-div h2{
+            color: white;
+           
+        }
+        input[type='text'],input[type='password']{
+            height: 35px;
+            width: 200px;
+            text-align: center;
+            font-size: 18px;
+            border: 2px solid blue;
+            border-radius: 20px;
+            margin: 7px;
+        }
+        input[type='submit']{
+            background-color: blue;
+            border: none;
+            color: white;
+            margin-bottom: 7px;
+            padding: 10px 25px ;
+            font-size: 20px;
+            border-radius: 20px;
+        }
+        input[type='submit']:hover{
+            cursor: pointer;
+            background-color: green;
+            box-shadow: 0 0 15px red;
+        }
+        input[type='text']:focus,
+        input[type='password']:focus{
+            outline: none;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Login Form -->
+    <div class="form-div">
+        <h2>Login Here</h2>
+        <form>
+            <input type="text" placeholder="User Name">
+            <br>
+            <input type="password" placeholder="Password">
+            <br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+</body>
+</html>
